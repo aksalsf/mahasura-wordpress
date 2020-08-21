@@ -10,11 +10,11 @@
  ?>
 <!-- Mobile Nav -->
 <nav class="mobile-nav-container">
-  <a href="#" class="mobile-nav-item" title="Beranda"><i class="fa fa-home"></i></a>
-  <a href="#" class="mobile-nav-item" title="Warta"><i class="fa fa-newspaper"></i></a>
-  <a href="#" class="mobile-nav-item" title="Darma"><i class="fa fa-check-square"></i></a>
-  <a href="#" class="mobile-nav-item" title="Rubrik"><i class="fa fa-heart"></i></a>
-  <a href="#" class="mobile-nav-item" title="Semar"><i class="fa fa-university"></i></a>
+  <a href="<?php echo get_theme_mod('mobile__nav-url1', 'https://pkkmb.uns.ac.id/');?>" class="mobile-nav-item"><i class="<?php echo get_theme_mod('mobile__nav-icon1', 'fa fa-home');?>"></i></a>
+  <a href="<?php echo get_theme_mod('mobile__nav-url2', 'https://pkkmb.uns.ac.id/');?>" class="mobile-nav-item"><i class="<?php echo get_theme_mod('mobile__nav-icon2', 'fa fa-newspaper');?>"></i></a>
+  <a href="<?php echo get_theme_mod('mobile__nav-url3', 'https://pkkmb.uns.ac.id/');?>" class="mobile-nav-item"><i class="<?php echo get_theme_mod('mobile__nav-icon3', 'fa fa-check-square');?>"></i></a>
+  <a href="<?php echo get_theme_mod('mobile__nav-url4', 'https://pkkmb.uns.ac.id/');?>" class="mobile-nav-item"><i class="<?php echo get_theme_mod('mobile__nav-icon4', 'fa fa-heart');?>"></i></a>
+  <a href="<?php echo get_theme_mod('mobile__nav-url5', 'https://pkkmb.uns.ac.id/');?>" class="mobile-nav-item"><i class="<?php echo get_theme_mod('mobile__nav-icon5', 'fa fa-universityy');?>"></i></a>
 </nav>
 <footer class="bg-mahasura-red pt-5 pb-5 text-white d-md-block d-none">
   <div class="container">

@@ -451,5 +451,174 @@ function mahasura_customizer_register($wp_customize) {
     'priority' => 4
   ));
 
+  // Archive Section
+  $wp_customize -> add_section('archive', array(
+    'title' => __('Archive Header Image', 'mahasura__muda'),
+    'description' => sprintf(__('Kustomisasi gambar header halaman arsip website PKKMB UNS 2020', 'mahasura__muda')),
+    'priority' => 180
+  ));
+
+  // Archive Image
+  $wp_customize -> add_setting('archive__image', array(
+    'default' => get_bloginfo( 'template_directory' ) . '/img/thumbnail.png',
+    'type' => 'theme_mod'
+  ));
+
+  $wp_customize -> add_control(
+    new WP_Customize_Image_Control($wp_customize, 'archive__image', array(
+      'label' => __('Background Header', 'mahasura__muda'),
+      'section' => 'archive',
+      'setting' => 'archive__image',
+      'priority' => 1
+    ))
+  );
+
+  // Mobile Nav Section
+  $wp_customize -> add_section('mobile__nav', array(
+    'title' => __('Mobile Nav Cutomization', 'mahasura__muda'),
+    'description' => sprintf(__('Kustomisasi mobile nav website PKKMB UNS 2020', 'mahasura__muda')),
+    'priority' => 190
+  ));
+
+  // First Mobile Nav Icon
+  $wp_customize -> add_setting('mobile__nav-icon1', array(
+    'default' => _x( 'fa fa-home', 'mahasura__muda' ),
+    'type' => 'theme_mod'
+  ));
+
+  $wp_customize -> add_control('mobile__nav-icon1', array(
+    'label' => __('First Icon', 'mahasura__muda'),
+    'section' => 'mobile__nav',
+    'priority' => 1
+  ));
+
+  // First Mobile Nav Link
+  $wp_customize -> add_setting('mobile__nav-url1', array(
+    'default' => _x( 'https://pkkmb.uns.ac.id/', 'mahasura__muda' ),
+    'type' => 'theme_mod'
+  ));
+
+  $wp_customize -> add_control('mobile__nav-url1', array(
+    'label' => __('First Nav URL', 'mahasura__muda'),
+    'type' => 'url',
+    'section' => 'mobile__nav',
+    'input_attrs' => array(
+      'placeholder' => __( 'https://pkkmb.uns.ac.id/' ),
+    ),
+    'priority' => 2
+  ));
+
+  // Second Mobile Nav Icon
+  $wp_customize -> add_setting('mobile__nav-icon2', array(
+    'default' => _x( 'fa fa-newspaper', 'mahasura__muda' ),
+    'type' => 'theme_mod'
+  ));
+
+  $wp_customize -> add_control('mobile__nav-icon2', array(
+    'label' => __('Second Icon', 'mahasura__muda'),
+    'section' => 'mobile__nav',
+    'priority' => 3
+  ));
+
+  // Second Mobile Nav Link
+  $wp_customize -> add_setting('mobile__nav-url2', array(
+    'default' => _x( 'https://pkkmb.uns.ac.id/', 'mahasura__muda' ),
+    'type' => 'theme_mod'
+  ));
+
+  $wp_customize -> add_control('mobile__nav-url2', array(
+    'label' => __('Second Nav URL', 'mahasura__muda'),
+    'type' => 'url',
+    'section' => 'mobile__nav',
+    'input_attrs' => array(
+      'placeholder' => __( 'https://pkkmb.uns.ac.id/' ),
+    ),
+    'priority' => 4
+  ));
+
+  // Third Mobile Nav Icon
+  $wp_customize -> add_setting('mobile__nav-icon3', array(
+    'default' => _x( 'fa fa-check-square', 'mahasura__muda' ),
+    'type' => 'theme_mod'
+  ));
+
+  $wp_customize -> add_control('mobile__nav-icon3', array(
+    'label' => __('Third Icon', 'mahasura__muda'),
+    'section' => 'mobile__nav',
+    'priority' => 5
+  ));
+
+  // Third Mobile Nav Link
+  $wp_customize -> add_setting('mobile__nav-url3', array(
+    'default' => _x( 'https://pkkmb.uns.ac.id/', 'mahasura__muda' ),
+    'type' => 'theme_mod'
+  ));
+
+  $wp_customize -> add_control('mobile__nav-url3', array(
+    'label' => __('Third Nav URL', 'mahasura__muda'),
+    'type' => 'url',
+    'section' => 'mobile__nav',
+    'input_attrs' => array(
+      'placeholder' => __( 'https://pkkmb.uns.ac.id/' ),
+    ),
+    'priority' => 6
+  ));
+
+  // Fourth Mobile Nav Icon
+  $wp_customize -> add_setting('mobile__nav-icon4', array(
+    'default' => _x( 'fa fa-heart', 'mahasura__muda' ),
+    'type' => 'theme_mod'
+  ));
+
+  $wp_customize -> add_control('mobile__nav-icon4', array(
+    'label' => __('Fourth Icon', 'mahasura__muda'),
+    'section' => 'mobile__nav',
+    'priority' => 7
+  ));
+
+  // Fourth Mobile Nav Link
+  $wp_customize -> add_setting('mobile__nav-url4', array(
+    'default' => _x( 'https://pkkmb.uns.ac.id/', 'mahasura__muda' ),
+    'type' => 'theme_mod'
+  ));
+
+  $wp_customize -> add_control('mobile__nav-url4', array(
+    'label' => __('Fourth Nav URL', 'mahasura__muda'),
+    'type' => 'url',
+    'section' => 'mobile__nav',
+    'input_attrs' => array(
+      'placeholder' => __( 'https://pkkmb.uns.ac.id/' ),
+    ),
+    'priority' => 8
+  ));
+
+  // Fifth Mobile Nav Icon
+  $wp_customize -> add_setting('mobile__nav-icon5', array(
+    'default' => _x( 'fa fa-university', 'mahasura__muda' ),
+    'type' => 'theme_mod'
+  ));
+
+  $wp_customize -> add_control('mobile__nav-icon5', array(
+    'label' => __('Fifth Icon', 'mahasura__muda'),
+    'section' => 'mobile__nav',
+    'priority' => 9
+  ));
+
+  // Fifth Mobile Nav Link
+  $wp_customize -> add_setting('mobile__nav-url5', array(
+    'default' => _x( 'https://pkkmb.uns.ac.id/', 'mahasura__muda' ),
+    'type' => 'theme_mod'
+  ));
+
+  $wp_customize -> add_control('mobile__nav-url5', array(
+    'label' => __('Fifth Nav URL', 'mahasura__muda'),
+    'type' => 'url',
+    'section' => 'mobile__nav',
+    'input_attrs' => array(
+      'placeholder' => __( 'https://pkkmb.uns.ac.id/' ),
+    ),
+    'priority' => 10
+  ));
+
 }
 add_action( 'customize_register', 'mahasura_customizer_register' );
