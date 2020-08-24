@@ -16,6 +16,20 @@
     </aside>
   <?php endif; ?>
   <!-- Content Tag End -->
+  <aside class="d-flex justify-content-between mt-5">
+    <div class="post__nav">
+      <div class="text-left font-weight-bold">
+        Sebelumnya
+      </div>
+      <?php previous_post_link( '%link', '%title'); ?>
+    </div>
+    <div class="post__nav">
+      <div class="text-right font-weight-bold">
+        Berikutnya
+      </div>
+      <?php next_post_link( '%link', '%title' ); ?>
+    </div>
+  </aside>
   <hr class="mb-5">
   <!-- Share Button -->
   <aside class="text-center">

@@ -76,7 +76,7 @@
     <div class="container">
       <!-- Navbar Brand -->
       <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-        <img src="<?php bloginfo('template_url'); ?>/img/nav-brand.png" class="nav-brand__image" alt="Logo PKKMB UNS 2020">
+        <img src="<?php echo get_theme_mod( 'nav__brand', get_bloginfo( 'template_url' ).'/img/nav-brand.png' ) ?>" class="nav-brand__image" alt="Logo PKKMB UNS 2020">
       </a>
       <!-- Navbar Menu -->
       <?php
@@ -91,6 +91,7 @@
           'walker'          => new WP_Bootstrap_Navwalker(),
       ) );
       ?>
+      <?php get_template_part( 'search-button' ); ?>
     </div>
   </nav>
   <!-- Navbar End -->

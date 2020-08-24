@@ -227,9 +227,9 @@ nav.navbar {
   .mobile-nav-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: "home keranjang cari notifikasi akun";
     background-color: #fff;
-    border-top: thin solid rgba(0, 0, 0, 0.06);
+    border-radius: 0.75rem 0.75rem 0 0;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0, 0.15);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -238,17 +238,22 @@ nav.navbar {
   }
 
   .mobile-nav-item {
-    font-size: 1.5rem;
-    color: #2B2A35;
+    line-height: normal;
+    color: rgb(38, 38, 38);
     opacity: 76%;
     padding: 1rem;
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: opacity 250ms ease-in-out;
+    transition: 250ms ease-in-out;
   }
 
-  a.mobile-nav-item:hover, a.mobile-nav-item:active {
+  .mobile-nav-item > * {
+    font-size: 24px;
+    max-width: 24px;
+  }
+
+  .mobile-nav-item:hover, .mobile-nav-item:active {
     color: #700406;
     opacity: 100%;
   }
@@ -596,4 +601,28 @@ div.reply {
 
 .footer__container div ul li a {
   color: #FFFFFF;
+}
+
+.nav-next a, .nav-previous a{
+  display: inline-block;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: #700406;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.post__nav a {
+  color: #700406;
 }

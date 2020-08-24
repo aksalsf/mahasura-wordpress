@@ -49,6 +49,12 @@
           <?php get_template_part( 'content' ); ?>
         <?php endwhile; ?>
       </div>
+      <div class="nav-next alignright">
+        <?php next_posts_link( 'Berikutnya' ); ?>
+      </div>
+      <div class="nav-previous alignleft">
+        <?php previous_posts_link( 'Kembali' ); ?>
+      </div>
     </article>
     <!-- Warta Section End -->
   </main>

@@ -73,16 +73,16 @@
           </article>
         </div>
       </div>
-      <!-- Darma -->
+      <!-- Penugasan -->
       <div class="col-lg-4 mb-3 mb-lg-0">
         <div class="card border-0 featured-content">
-          <a href="<?php echo get_theme_mod('featured__box-url3', 'https://pkkmb.uns.ac.id/');?>" class="featured-content__image-link" title="<?php echo get_theme_mod('featured__box-title3', 'Darma');?>">
+          <a href="<?php echo get_theme_mod('featured__box-url3', 'https://pkkmb.uns.ac.id/');?>" class="featured-content__image-link" title="<?php echo get_theme_mod('featured__box-title3', 'Penugasan');?>">
             <img src="<?php echo get_theme_mod('featured__box-image3', get_bloginfo( 'template_url' ).'/img/thumbnail.png');?>" class="card-img-top featured-content__image" alt="<?php echo get_theme_mod('featured__box-description3', 'Nikmati langsung gimana hectic-nya jadi mahasiswa!');?>">
           </a>
           <article class="card-body">
             <h3 class="card-title font-weight-bold h4">
               <a href="<?php echo get_theme_mod('featured__box-url3', 'https://pkkmb.uns.ac.id/');?>" class="featured-content__link color-black" title="<?php echo get_theme_mod('featured__box-description3', 'Nikmati langsung gimana hectic-nya jadi mahasiswa!');?>">
-                <?php echo get_theme_mod('featured__box-title3', 'Darma');?>
+                <?php echo get_theme_mod('featured__box-title3', 'Penugasan');?>
               </a>
             </h3>
             <p class="card-text">
