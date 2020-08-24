@@ -10,7 +10,7 @@
  ?>
 <?php get_header( ); ?>
   <!-- Header -->
-  <header class="header__container" style="background-image: url(<?php bloginfo( 'template_url' ); ?>/img/postpage.jpg);">
+  <header class="header__container" style="background-image: url(<?php echo get_theme_mod('header__image', get_bloginfo( 'template_url' ).'/img/header.jpg'); ?>);">
     <div class="header__overlay"></div>
     <div class="position-absolute header__image color-red text-center">
       <h1 class="font-weight-bold">
@@ -33,7 +33,7 @@
         <?php if (have_posts()): ?>
             <?php the_archive_description(); ?>
           <?php else: ?>
-            Tidak ada artikel di sini~
+            <p>Tidak ada artikel di sini~</p>
         <?php endif; ?>
       </p>
     </div>

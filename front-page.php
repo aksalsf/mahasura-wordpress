@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <!-- Header -->
-<header class="header__container" style="background-image: url(<?php echo get_theme_mod('header__image', get_bloginfo( 'template_url' ).'/img/header.jpg') ?>);">
+<header class="header__container" style="background-image: url(<?php echo get_theme_mod('header__image', get_bloginfo( 'template_url' ).'/img/header.jpg'); ?>);">
   <div class="header__overlay"></div>
   <figure class="position-absolute header__image">
     <img src="<?php echo get_theme_mod('header__logo', get_bloginfo( 'template_url' ).'/img/colored-logo.png'); ?>" class="img-fluid" alt="Logo Resmi PKKMB UNS <?php echo date('Y'); ?>">
