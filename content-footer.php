@@ -16,18 +16,22 @@
     </aside>
   <?php endif; ?>
   <!-- Content Tag End -->
-  <aside class="d-flex justify-content-between mt-5">
-    <div class="post__nav">
-      <div class="text-left font-weight-bold">
-        Sebelumnya
-      </div>
-      <?php previous_post_link( '%link', '%title'); ?>
+  <aside class="d-flex justify-content-between mt-5 flex-row flex-wrap text-capitalize">
+    <div class="post__nav text-left">
+      <?php if (strlen(get_previous_post()->post_title) > 0): ?>
+        <div class="font-weight-bold">
+          Sebelumnya
+        </div>
+        <?php previous_post_link( '%link', '%title'); ?>
+      <?php endif; ?>
     </div>
-    <div class="post__nav">
-      <div class="text-right font-weight-bold">
-        Berikutnya
-      </div>
-      <?php next_post_link( '%link', '%title' ); ?>
+    <div class="post__nav text-right">
+      <?php if (strlen(get_next_post()->post_title) > 0): ?>
+        <div class="font-weight-bold">
+          Berikutnya
+        </div>
+        <?php next_post_link( '%link', '%title' ); ?>
+      <?php endif; ?>
     </div>
   </aside>
   <hr class="mb-5">
