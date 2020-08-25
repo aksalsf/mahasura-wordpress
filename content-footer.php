@@ -62,5 +62,5 @@
   </aside>
   <!-- Share Button -->
   <hr class="mt-5">
-  <?php comments_template(); ?>
+  <?php comments_template('/comments.php'); ?>
 </footer>
