@@ -623,5 +623,6 @@ div.reply {
 }
 
 .post__nav a {
+  text-transform: capitalize;
   color: #700406;
 }

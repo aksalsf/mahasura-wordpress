@@ -16,8 +16,8 @@
     </aside>
   <?php endif; ?>
   <!-- Content Tag End -->
-  <aside class="d-flex justify-content-between mt-5 flex-row flex-wrap text-capitalize">
-    <div class="post__nav text-left">
+  <aside class="row mt-5">
+    <div class="post__nav text-left col-6">
       <?php if (strlen(get_previous_post()->post_title) > 0): ?>
         <div class="font-weight-bold">
           Sebelumnya
@@ -25,7 +25,7 @@
         <?php previous_post_link( '%link', '%title'); ?>
       <?php endif; ?>
     </div>
-    <div class="post__nav text-right">
+    <div class="post__nav text-right col-6">
       <?php if (strlen(get_next_post()->post_title) > 0): ?>
         <div class="font-weight-bold">
           Berikutnya
