@@ -49,6 +49,19 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <!-- Own JS -->
-<script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
+<script>$(window).scroll(function(){var scrollDistance=$(window).scrollTop();if(scrollDistance>=80){$("#mahasuraNavbar").addClass("bg-white nav-shadow")}else{$("#mahasuraNavbar").removeClass("bg-white nav-shadow")}});</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+<script>
+var video_wrapper = $('.youtube-video-place');
+//  Check to see if youtube wrapper exists
+if(video_wrapper.length){
+// If user clicks on the video wrapper load the video.
+$('.play-youtube-video').on('click', function(){
+/* Dynamically inject the iframe on demand of the user.
+Pull the youtube url from the data attribute on the wrapper element. */
+video_wrapper.html('<iframe allowfullscreen frameborder="0" class="embed-responsive-item" src="' + video_wrapper.data('yt-url') + '"></iframe>');
+});
+}
+</script>
 </body>
 </html>

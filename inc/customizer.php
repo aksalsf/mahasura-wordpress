@@ -407,6 +407,21 @@ function mahasura_customizer_register($wp_customize) {
     'priority' => 5
   ));
 
+  // Video Thumbnail
+  $wp_customize -> add_setting('video__link-thumb', array(
+    'default' => 'https://i.ytimg.com/vi_webp/OuEndh4T8Bk/sddefault.webp',
+    'type' => 'theme_mod'
+  ));
+
+  $wp_customize -> add_control(
+    new WP_Customize_Image_Control($wp_customize, 'video__link-thumb', array(
+      'label' => __('Video Thumbnail', 'mahasura__muda'),
+      'section' => 'video',
+      'setting' => 'video__link-thumb',
+      'priority' => 6
+    ))
+  );
+
   // Warta Section
   $wp_customize -> add_section('warta', array(
     'title' => __('Warta', 'mahasura__muda'),
@@ -465,28 +480,6 @@ function mahasura_customizer_register($wp_customize) {
     'section' => 'warta',
     'priority' => 4
   ));
-
-  // Archive Section
-  $wp_customize -> add_section('archive', array(
-    'title' => __('Archive Header Image', 'mahasura__muda'),
-    'description' => sprintf(__('Kustomisasi gambar header halaman arsip website PKKMB UNS 2020', 'mahasura__muda')),
-    'priority' => 180
-  ));
-
-  // Archive Image
-  $wp_customize -> add_setting('archive__image', array(
-    'default' => get_bloginfo( 'template_directory' ) . '/img/thumbnail.png',
-    'type' => 'theme_mod'
-  ));
-
-  $wp_customize -> add_control(
-    new WP_Customize_Image_Control($wp_customize, 'archive__image', array(
-      'label' => __('Background Header', 'mahasura__muda'),
-      'section' => 'archive',
-      'setting' => 'archive__image',
-      'priority' => 1
-    ))
-  );
 
   // Mobile Nav Section
   $wp_customize -> add_section('mobile__nav', array(

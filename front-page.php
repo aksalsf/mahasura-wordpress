@@ -106,8 +106,15 @@
     </header>
     <div class="col-lg-6 mx-auto">
       <div class="embed-responsive embed-responsive-4by3 shadow-lg">
-        <iframe class="embed-responsive-item rounded" src="<?php echo get_theme_mod('video__link-url', 'https://www.youtube.com/embed/OuEndh4T8Bk');?>" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe
+          class="embed-responsive-item rounded"
+          src="<?php echo get_theme_mod('video__link-url', 'https://www.youtube.com/embed/OuEndh4T8Bk'); ?>"
+          srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=<?php echo get_theme_mod('video__link-url', 'https://www.youtube.com/embed/OuEndh4T8Bk'); ?>?autoplay=1><img src=<?php echo get_theme_mod('video__link-thumb', 'https://i.ytimg.com/vi_webp/OuEndh4T8Bk/sddefault.webp'); ?> alt='<?php echo get_theme_mod('video__channel-text', 'Kunjungi kanal YouTube kami ⟶');?>'><span></span></a>"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          title="<?php echo get_theme_mod('video__channel-text', 'Kunjungi kanal YouTube kami ⟶');?>"
+        ></iframe>
       </div>
     </div>
   </section>

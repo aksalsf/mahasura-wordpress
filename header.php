@@ -41,7 +41,7 @@
  }
  ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html lang="id-ID">
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,7 +67,6 @@
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
   <?php wp_head(); ?>
 </head>
 <body>
