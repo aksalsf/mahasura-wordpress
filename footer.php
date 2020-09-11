@@ -18,12 +18,16 @@
 </nav>
 <!-- Modal -->
 <div class="modal fade" id="mahasuraModal" tabindex="-1" aria-labelledby="mahasuraModal" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-body">
-        <form role="search" method="get" class="search-form form-inline justify-content-center" action="<?php echo home_url( '/' ); ?>">
-          <input type="search" class="search-field form-control mb-2 mr-sm-2" placeholder="<?php echo esc_attr_x( 'Cari …', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
-          <input type="submit" class="search-submit btn bg-mahasura-red text-white mb-2" value="<?php echo esc_attr_x( 'Cari', 'submit button' ) ?>" />
+        <div class="row">
+          <img src="http://mahasuramuda.bemuns.com/wp-content/uploads/2020/09/maskot_maskott.png" class="img-fluid col-md-6 col-8 mx-auto" style="max-height:320px;" alt="Semut Mahasura Muda">
+          <h2 class="font-weight-bold col-md-6 my-auto text-center display-5">Yuk cari tahu!</h2>
+        </div>
+        <form role="search" method="get" class="search-form form-inline justify-content-center mt-3" action="<?php echo home_url( '/' ); ?>">
+          <input type="search" class="search-field form-control mb-2 mr-sm-2 w-100" placeholder="<?php echo esc_attr_x( 'Cari …', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+          <input type="submit" class="search-submit btn bg-mahasura-red text-white mb-2 w-100" value="<?php echo esc_attr_x( 'Cari', 'submit button' ) ?>" />
         </form>
       </div>
     </div>

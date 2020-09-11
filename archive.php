@@ -22,7 +22,7 @@
             } elseif (is_search()) {
               echo "Hasil Pencarian";
             } else {
-              wp_title( $sep = '', $display = true, $seplocation = '' );
+			  single_post_title();
             }
         ?>
       </h1>

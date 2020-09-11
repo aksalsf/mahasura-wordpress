@@ -61,7 +61,7 @@
   <meta property="twitter:title" content="<?php mahasura_page_title(); ?>">
   <meta property="twitter:description" content="<?php mahasura_page_description(); ?>">
   <meta property="twitter:image" content="<?php mahasura_page_image(); ?>">
-  <meta name="google-site-verification" content="QcWRctUhWjOYm6G61gc_1CVBzSj32yJFcksi2L6HV5c" />
+  <meta name="google-site-verification" content="QPV4t8uLGK059nPxbqoBFds5U0yd-3P27uGQnCwqeNM" />
   <!-- CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">

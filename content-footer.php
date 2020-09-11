@@ -16,6 +16,7 @@
     </aside>
   <?php endif; ?>
   <!-- Content Tag End -->
+  <?php if(!is_page()) : ?>
   <aside class="row mt-5">
     <div class="post__nav text-left col-6">
       <?php if (strlen(get_previous_post()->post_title) > 0): ?>
@@ -35,6 +36,7 @@
     </div>
   </aside>
   <hr class="mb-5">
+  <?php endif; ?>
   <!-- Share Button -->
   <aside class="text-center">
     <h6 class="mb-3">Bagikan ke teman-temanmu!</h6>
